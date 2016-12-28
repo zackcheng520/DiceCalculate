@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.perfectworld.dicecalculate.CalculateActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextCurrentPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textCurrentPoint"
+                android1:gravity="center" />
+
+            <Spinner
+                android:id="@+id/SpinnerCurrentPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/currentPointArray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextTopPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textTopPoint"
+                android1:gravity="center" />
+
+            <Spinner
+                android:id="@+id/SpinnerTopPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/topPointArray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/TextShowOrientation"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="@string/textShowOrientation"
+                    android1:gravity="center" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupShowOrientation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_SingleRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/singleRight" />
+
+                    <RadioButton
+                        android:id="@+id/radio_SingleUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/singleUp" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextTargetPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textTargetPoint"
+                android1:gravity="left" />
+
+            <com.perfectworld.dicecalculate.FlowRadioGroup
+                android:id="@+id/radioGroupNeedPoint"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radio_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ace" />
+
+                <RadioButton
+                    android:id="@+id/radio_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deuce" />
+
+                <RadioButton
+                    android:id="@+id/radio_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trey" />
+
+                <RadioButton
+                    android:id="@+id/radio_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cater" />
+
+                <RadioButton
+                    android:id="@+id/radio_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cinque" />
+
+                <RadioButton
+                    android:id="@+id/radio_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sice" />
+            </com.perfectworld.dicecalculate.FlowRadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextMessage"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android1:gravity="center" />
+
+        <TextView
+            android:id="@+id/TextResult"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android1:gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dip"
+        android:layout_marginLeft="100dip"
+        android:text="Author：醉舞云端花柒夜"
+        android:textColor="#ffccff"
+        android:textSize="20dp" />
+
+</RelativeLayout>

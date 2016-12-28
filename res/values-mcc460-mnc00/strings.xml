@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ace">1点</string>
+    <string name="deuce">2点</string>
+    <string name="trey">3点</string>
+    <string name="cater">4点</string>
+    <string name="cinque">5点</string>
+    <string name="sice">6点</string>
+    <string name="textCurrentPoint">箭头选择点数46000:</string>
+    <string name="textTopPoint">顶部选择点数:</string>
+    <string name="textTargetPoint">目标点数:</string>
+    <string name="textShowOrientation">小骰子组合:</string>
+    <string name="singleRight">单上</string>
+    <string name="singleUp">单右</string>
+    
+    <string name="result_TRR">上右右</string><!-- 上面 -->
+    <string name="result_RRT">右右上</string><!-- 下面 -->
+    <string name="result_RTR">右上右</string><!-- 后面 -->
+    
+    <string name="result_TTR">上上右</string><!-- 左面 -->
+    <string name="result_RTT">右上上</string><!-- 右面 -->
+    <string name="result_TRT">上右上</string><!-- 后面 -->
+</resources>
